@@ -6,33 +6,16 @@ function showElement(elementId2){
     const elementShow = document.getElementById(elementId2);
     elementShow.classList.remove('hidden');
 }
-function addBackgroundColorById(element){
+function addBackgroundColor(element){
     const background = document.getElementById(element);
-    background.classList.add('bg-orange-500');
+    background.classList.add('bg-[#1dd100]');
 }
-function removeBackgroundColorById(element){
+function removeBackgroundColor(element){
     const background = document.getElementById(element);
-    background.classList.remove('bg-orange-500');
+    background.classList.remove('bg-[#1dd100]');
 }
 
-function alphabet(){
-    const alphaberString = 'abcdefghijklmnopqrstuvwxyz';
-    const alphabetArray = alphaberString.split('');
-    // console.log(alphabetArray);
-    const numberRandom = Math.random()*25;
-    const index = Math.round(numberRandom);
-    const alphabet = alphabetArray[index];
-    // console.log(alphabet);
-    return alphabet;
-}
-
-function findElementById(element){
-    const findElement =document.getElementById(element);
-    const elementInnerText = findElement.innerText;
-    const elementInt = parseInt(elementInnerText);
-    return elementInt;
-}
-function setNewScore (element ,value){
+function setNewSit(element ,value){
     const scoreElement = document.getElementById(element);
     scoreElement.innerText = value;
 }

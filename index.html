@@ -26,12 +26,12 @@
               </div>
               <a class="btn btn-ghost text-xl">Ena</a>
             </div>
-            <div class="navbar-center  hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
+            <div class="navbar-center  hidden lg:flex ">
+              <ul class="menu menu-horizontal  px-1">
+                <!-- <li><a>Home</a></li>
                 <li><a>About</a></li>
                 <li><a>Destination</a></li>
-                <li><a>Search</a></li>
+                <li><a>Search</a></li> -->
               </ul>
             </div>
             <div class="navbar-end">
@@ -109,7 +109,7 @@
                             <img src="./images/bus-logo.png" alt="">
                         </div>
                         <div class="flex-1">
-                            <h2 class="text-3xl text-black font-semibold">Greenline Paribahan</h2>
+                            <h2 class="text-3xl text-black font-semibold">Ena Paribahan</h2>
                             <p class="text-base text-stone-600 font-medium">Coach-009-WEB ! AC_Business</p>
                         </div>
                         <div class="flex-1 text-right">
@@ -117,7 +117,7 @@
                                 <div>
                                     <img src="./images/seat-green.png" alt="">
                                 </div>
-                                <span class="text-lg text-[#1dd100] font-medium">40</span>
+                                <span id="sitNumbers" class="text-lg text-[#1dd100] font-medium">36</span>
                                 <p class="text-lg text-[#1dd100] font-medium">Seats left</p>                               
                             </button>
                         </div>
@@ -162,7 +162,7 @@
                 <!-- 3rd part of sidule -->
                 <div class="flex-1  text-center mt-20">
                     <img class="w-20 h-20 object-cover m-auto" src="./images/fare.png" alt="">
-                    <p class="text-2xl font-semibold ">550 Taka</p>
+                    <p class="text-2xl font-semibold "><span  id="tickerPrice">550</span>Taka</p>
                     <p class="text-2xl font-semibold text-gray-400">Per Seat</p>
                 </div>
             </div>
@@ -210,8 +210,8 @@
                                 <button class="btn sit">A1</button>
                                 <button class="btn sit">B1</button>
                                 <button class="btn sit">C1</button>
-                                <button class="btn sit">D1</button>
-                                <button class="btn sit">E1</button>
+                                <button class="btn bg-[#1dd100]">D1</button>
+                                <button class="btn bg-[#1dd100]">E1</button>
                                 <button class="btn sit">F1</button>
                                 <button class="btn sit">G1</button>
                                 <button class="btn sit">H1</button>
@@ -222,7 +222,7 @@
                                 <button class="btn  sit">A2</button>
                                 <button class="btn  sit">B2</button>
                                 <button class="btn  sit">C2</button>
-                                <button class="btn  sit">D2</button>
+                                <button class="btn  bg-[#1dd100]">D2</button>
                                 <button class="btn  sit">E2</button>
                                 <button class="btn  sit">F2</button>
                                 <button class="btn  sit">G2</button>
@@ -245,7 +245,7 @@
                               <div class="flex flex-col w-32 gap-3 mx-3">
                                 <button class="btn  sit">A4</button>
                                 <button class="btn  sit">B4</button>
-                                <button class="btn  sit">C4</button>
+                                <button class="btn  bg-[#1dd100]">C4</button>
                                 <button class="btn  sit">D4</button>
                                 <button class="btn  sit">E4</button>
                                 <button class="btn  sit">F4</button>
@@ -266,8 +266,8 @@
                     <hr class="w-11/12 m-auto ">
                     <div class="bg-[#eeeeee] p-2 rounded-md">
                         <div class="flex my-5">
-                            <div class="w-1/3 pl-3">
-                                <p>Seat</p>
+                            <div class="w-1/3 pl-3 flex">
+                                <p>Seat</p><span id="sitPurses" class="bg-[#1dd100] w-3 rounded-lg text-white">0</span>
                             </div>
                             <div class="w-1/3">
                                 <p>Class</p>
@@ -277,7 +277,28 @@
                             </div>
                         </div>
                         <hr class="w-11/12 m-auto ">
-                        <div class="flex my-5">
+                        <div>
+                            <ul id="sitDetailsContainer" class="">
+
+                            </ul>
+                        </div>
+                        <!-- dinamic value start from here  -->
+                        <!-- <div class="flex my-5">
+                            <div  class="w-1/3 pl-3">
+                                <ul id="sitDetails">
+
+                                </ul>
+                                <p id="setSitName"> </p>
+                            </div>
+                            <div class="w-1/3">
+                                <p>Economoy</p>
+                            </div>
+                            <div class="w-1/3">
+                                <p>550</p>
+                            </div>
+                        </div> -->
+                        <!-- <hr class="w-11/12 m-auto "> -->
+                        <!-- <div class="flex my-5">
                             <div  class="w-1/3 pl-3">
                                 <p>C2</p>
                             </div>
@@ -287,32 +308,20 @@
                             <div class="w-1/3">
                                 <p>550</p>
                             </div>
-                        </div>
-                        <hr class="w-11/12 m-auto ">
-                        <div class="flex my-5">
-                            <div  class="w-1/3 pl-3">
-                                <p>C2</p>
-                            </div>
-                            <div class="w-1/3">
-                                <p>Economoy</p>
-                            </div>
-                            <div class="w-1/3">
-                                <p>550</p>
-                            </div>
-                        </div>
+                        </div> -->
                         <div class="flex">
-                            <div class="flex-1">
+                            <div class="flex-1  pl-3">
                                 <p>Total Price</p>
                             </div>
                             <div class="flex-1  text-right pr-5 my-5">
                                 <div>
-                                    <p>BDT : 0</p>
+                                    <p>BDT :<span id="totalPrice">0</span></p>
                                 </div>
                             </div>
                         </div>
                         <div class="w-full relative">
                             <input type="text" class="w-full h-12 rounded-lg pl-5 " placeholder="Have any copupon?">
-                            <input type="submit"class="w-32 h-10 rounded-lg text-lg text-white font-medium bg-[#1dd100] absolute bottom-1 right-1" value="Apply">
+                            <input type="submit"class="w-32 h-10 rounded-lg text-lg text-white font-medium bg-[#1dd100] absolute bottom-1 right-1 cursor-pointer" value="Apply">
                         </div>
                         <div class="flex my-5">
                             <div class="flex-1 text-left">
