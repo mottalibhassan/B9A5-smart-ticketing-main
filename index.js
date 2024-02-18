@@ -1,5 +1,4 @@
 let sitNUmber = document.getElementById('sitNumbers').innerText;
-// sitNUmber.innerText=sitNumbers
 let sitNumbers = 36;
 let totalSit = 0;
 const sitClass = "Economoy";
@@ -47,5 +46,20 @@ for (let sit of allSit){
         console.log(totalAmountOfTicket);
         document.getElementById('totalPrice').innerText = totalAmountOfTicket;
     })
+}
+
+// purses successful pop up
+
+function popup(){
+    hideElement('headerContainer');
+    hideElement('footerSection');
+    hideElement('mainContainer');
+    showElement('popupView');
+}
+function normal(){
+    hideElement('popupView');
+    showElement('headerContainer');
+    showElement('footerSection');
+    showElement('mainContainer');
 }
 

@@ -10,7 +10,7 @@
     <title>Ena Paribahon</title>
 </head>
 <body class="container m-auto">
-    <header class="mt-5">
+    <header class="mt-5" id="headerContainer">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown ">
@@ -42,7 +42,8 @@
             </div>
           </div>
     </header>
-    <main class="container m-auto mt-5">
+    <main class="container m-auto mt-5" id="mainContainer">
+       <section class="">
         <div class="hero min-h-screen rounded-2xl" style="background-image: url(./images/banner.png);">
             <div class="hero-overlay bg-opacity-30"></div>
             <div class="hero-content text-center text-neutral-content">
@@ -53,6 +54,7 @@
               </div>
             </div>
           </div>
+       </section>
         <!-- Best offers for you -->
         <section class=" mt-10 my-5">
             <h2 class="text-black text-5xl font-bold text-center">Best offers for you</h2>
@@ -321,7 +323,7 @@
                         </div>
                         <div class="w-full relative">
                             <input type="text" class="w-full h-12 rounded-lg pl-5 " placeholder="Have any copupon?">
-                            <input type="submit"class="w-32 h-10 rounded-lg text-lg text-white font-medium bg-[#1dd100] absolute bottom-1 right-1 cursor-pointer" value="Apply">
+                            <input type="submit"class="w-32 h-10 rounded-lg text-lg text-white font-medium bg-[#1dd100] absolute bottom-1 right-1 cursor-pointer " value="Apply">
                         </div>
                         <div class="flex my-5">
                             <div class="flex-1 text-left">
@@ -346,7 +348,7 @@
                             <input type="text" class="w-full rounded-md h-12 p-5" placeholder="Enter your email id">
                         </div>
                         <div class="pt-5">
-                            <button class="btn w-full text-lg text-white hover:text-black bg-[#1dd100] font-medium">Next</button>
+                            <button onclick="popup()" class="btn w-full text-lg text-white hover:text-black bg-[#1dd100] font-medium">Next</button>
                         </div>
                         <div class="flex pt-1">
                             <div class="flex-1 justify-start ">
@@ -360,9 +362,23 @@
                 </div>
             </div>
         </section>
-
     </main>
-    <footer>
+    <!-- popup view -->
+    <section class="hidden" id="popupView">
+        <div class="min-h-screen bg-[#F2F1F1]">
+            <div class="artboard artboard-horizontal phone-2  rounded-3xl bg-[#ffffff] text-center m-auto ">
+                <div class="flex justify-center pt-10">
+                    <img src="./images/success.png" alt="">
+                </div>
+                <h2>SUCCESS</h2>
+                <p>Thank you for Booking Our Bus Seats. <br>We are working hard to find the best service and deals for you</p>
+                <p>Shortly you will find a confirmation in your email.</p>
+                <button onclick="normal()" class="btn ">Continue</button>
+            </div>
+            </div>
+        </div>
+    </section>
+    <footer class="" id="footerSection">
         <div>
             <footer class="footer p-10 bg-neutral text-neutral-content">
                 <aside>
