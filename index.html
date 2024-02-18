@@ -10,7 +10,7 @@
     <title>Ena Paribahon</title>
 </head>
 <body class="container m-auto">
-    <header>
+    <header class="mt-5">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown ">
@@ -42,18 +42,19 @@
             </div>
           </div>
     </header>
-    <main class="container m-auto">
-        <section class="bg-[url(./images/banner.png)] bg-no-repeat h-[550px] object-fill border">
-           <div>
-            <h1 class="text-6xl text-white font-bold pt-20 text-center">End-to-End Travel with <br><span class="text-6xl text-[#1DD100]">Ena Paribahan</span></h1>
-            <p class="text-lg text-white text-center">Yes, you can run unit tests and view the results directly within the app. The <br>integrated testing features allow for a streamlined .</p>
-            <div class="border ">
-                <button class="btn px-10 border-[#1DD100] text-white bg-[#1DD100]  hover:text-black">See All Offers</button>
+    <main class="container m-auto mt-5">
+        <div class="hero min-h-screen rounded-2xl" style="background-image: url(./images/banner.png);">
+            <div class="hero-overlay bg-opacity-30"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-2xl">
+                <h1 class="text-6xl text-white font-bold  text-center">End-to-End Travel with <br><span class="text-6xl text-[#1DD100]">Ena Paribahan</span></h1>
+                <p class="text-lg text-white text-center">Yes, you can run unit tests and view the results directly within the app. The <br>integrated testing features allow for a streamlined .</p>
+                <button class="btn px-10  border-[#1DD100] text-white bg-[#1DD100]  hover:text-black">Buy Tickets</button>
+              </div>
             </div>
-           </div>
-        </section>
+          </div>
         <!-- Best offers for you -->
-        <section class=" mt-5">
+        <section class=" mt-10 my-5">
             <h2 class="text-black text-5xl font-bold text-center">Best offers for you</h2>
             <div class="flex gap-3">
                 <div class="w-2/4 h-56 bg-[#FFBF0F] rounded-3xl mt-5 flex">
@@ -85,8 +86,10 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-10 mb-10">
-                <button class="btn px-10 bg-white text-[#1DD100]  border-[#1DD100] hover:bg-[#1DD100]  hover:text-white">See All Offers</button>
+            <div class="flex my-7">
+                <div class="flex-1  text-center">
+                    <button class="btn px-10 bg-white text-[#1DD100]  border-[#1DD100] hover:bg-[#1DD100]  hover:text-white">See All Offers</button>
+                </div>
             </div>
         </section>
         <!-- ticket sell section  -->
@@ -101,15 +104,15 @@
                 <!-- first part of sidule -->
                 <div class="w-8/12 ">
                     <!-- first part upper side -->
-                    <div class="flex ">
-                        <div class="w-20 h-20 object-cover">
+                    <div class="flex pt-5">
+                        <div class="w-20 h-20 object-cover ">
                             <img src="./images/bus-logo.png" alt="">
                         </div>
-                        <div>
+                        <div class="flex-1">
                             <h2 class="text-3xl text-black font-semibold">Greenline Paribahan</h2>
                             <p class="text-base text-stone-600 font-medium">Coach-009-WEB ! AC_Business</p>
                         </div>
-                        <div class="">
+                        <div class="flex-1 text-right">
                             <button class="btn bg-[#dae9d7] hover:bg-white border hover:border-[#1dd100]">
                                 <div>
                                     <img src="./images/seat-green.png" alt="">
@@ -120,8 +123,8 @@
                         </div>
                     </div>
                     <!-- first part lower side -->
-                    <div class="bg-[#F7F8F8] rounded-xl">
-                        <div class="flex pt-10">
+                    <div class="bg-[#F7F8F8] rounded-xl p-5">
+                        <div class="flex pt-5">
                             <div class="w-2/5  text-left">
                                 <p class="text-lg text-black font-medium">Route</p>
                             </div>
@@ -140,13 +143,13 @@
                         </div>
                         <hr class="w-5/6 m-auto">
                         <div class="flex pt-10 gap-10">
-                            <div class="w-auto bg-slate-300 px-6 py-4 rounded-xl bg-[#0307120d]">
+                            <div class="w-auto bg-slate-300 p-5 rounded-xl bg-[#0307120d]">
                                 <p class="text-base font-normal text-black">Boarding Point - Laxmipur</p>
                             </div>
-                            <div class="w-auto bg-slate-300 px-6 py-4 rounded-xl bg-[#0307120d]">
+                            <div class="w-auto bg-slate-300 p-5 rounded-xl bg-[#0307120d]">
                                 <p class="text-base font-normal text-black">Dropping Point - Bogura</p>
                             </div>
-                            <div class="w-auto bg-slate-300 px-6 py-4 rounded-xl bg-[#0307120d]">
+                            <div class="w-auto bg-slate-300 p-5 rounded-xl bg-[#0307120d]">
                                 <p class="text-base font-normal text-black">Est. Time - 11 Hour</p>
                             </div>
                         </div>
@@ -165,174 +168,185 @@
             </div>
             <!-- most important part  seat and ticket confurmation part -->
             <!-- seat plan first div -->
-            <div class="w-2/4 border">
-                <div>
-                    <p class="text-2xl font-semibold text-black">Select Your Seat</p>
-                </div>
-                <hr>
-                <div>
-                    <div>
-                        <img src="" alt="">
-                        <p>Available</p>
-                    </div>
-                    <div>
-                        <img src="" alt="">
-                        <p>Selected</p>
-                    </div>
-                </div>
-                <hr>
-                <!-- diver straing -->
-                <div>
-                    <button>
-                        <img src="" alt="">
-                    </button>
-                </div>
-                <div class="flex">
-                    <div class="flex flex-col  gap-3 my-2 mx-2 w-2 ">
-                        <kbd style="width: 10px;" class="kbd ">A</kbd>
-                        <kbd class="kbd ">B</kbd>
-                        <kbd class="kbd ">C</kbd>
-                        <kbd class="kbd ">D</kbd>
-                        <kbd class="kbd ">E</kbd>
-                        <kbd class="kbd ">F</kbd>
-                        <kbd class="kbd ">G</kbd>
-                        <kbd class="kbd ">H</kbd>
-                        <kbd class="kbd ">I</kbd>
-                        <kbd class="kbd ">J</kbd>
-                      </div> 
-                    <div class="flex flex-col pl-12 gap-3 my-2 mx-2 w-2">
-                        <kbd class="kbd sit">A1</kbd>
-                        <kbd class="kbd sit">B1</kbd>
-                        <kbd class="kbd sit">C1</kbd>
-                        <kbd class="kbd sit">D1</kbd>
-                        <kbd class="kbd sit">E1</kbd>
-                        <kbd class="kbd sit">F1</kbd>
-                        <kbd class="kbd sit">G1</kbd>
-                        <kbd class="kbd sit">H1</kbd>
-                        <kbd class="kbd sit">I1</kbd>
-                        <kbd class="kbd sit">J1</kbd>
-                      </div> 
-                      <div class="flex flex-col pl-12 gap-3 my-2 mx-2 w-4">
-                        <kbd class="kbd sit">A2</kbd>
-                        <kbd class="kbd sit">B2</kbd>
-                        <kbd class="kbd sit">C2</kbd>
-                        <kbd class="kbd sit">D2</kbd>
-                        <kbd class="kbd sit">E2</kbd>
-                        <kbd class="kbd sit">F2</kbd>
-                        <kbd class="kbd sit">G2</kbd>
-                        <kbd class="kbd sit">H2</kbd>
-                        <kbd class="kbd sit">I2</kbd>
-                        <kbd class="kbd sit">J2</kbd>
-                      </div> 
-                      <div class="flex flex-col pl-16 gap-3 my-2 mx-2 w-4">
-                        <kbd class="kbd sit">A3</kbd>
-                        <kbd class="kbd sit">B3</kbd>
-                        <kbd class="kbd sit">C3</kbd>
-                        <kbd class="kbd sit">D3</kbd>
-                        <kbd class="kbd sit">E3</kbd>
-                        <kbd class="kbd sit">F3</kbd>
-                        <kbd class="kbd sit">G3</kbd>
-                        <kbd class="kbd sit">H3</kbd>
-                        <kbd class="kbd sit">I3</kbd>
-                        <kbd class="kbd sit">J3</kbd>
-                      </div>
-                      <div class="flex flex-col pl-12 gap-3 my-2 mx-2 w-4">
-                        <kbd class="kbd sit">A4</kbd>
-                        <kbd class="kbd sit">B4</kbd>
-                        <kbd class="kbd sit">C4</kbd>
-                        <kbd class="kbd sit">D4</kbd>
-                        <kbd class="kbd sit">E4</kbd>
-                        <kbd class="kbd sit">F4</kbd>
-                        <kbd class="kbd sit">G4</kbd>
-                        <kbd class="kbd sit">H4</kbd>
-                        <kbd class="kbd sit">I4</kbd>
-                        <kbd class="kbd sit">J4</kbd>
-                      </div>
-                </div>
-            </div>
-            <div>
-                <hr>
-            </div>
-            <div>
-                <div><p>Select Your Seat</p></div>
-                <!-- sit const input field total grandtotal -->
-                <div>
-                    <div>
+            <!-- start -->
+            <div class="flex">
+                <div class="w-6/12 border">
+                    <div>    
                         <div>
-                            <p>Seat</p>
-                            <span>0</span>
+                            <p class="text-2xl font-semibold text-black">Select Your Seat</p>
                         </div>
-                        <div>
-                            <p>Seat</p>
+                        <hr>
+                        <div class="flex">
+                            <div class="flex justify-start flex-1">
+                                <img src="./images/seat-gray.png" alt="">
+                                <p>Available</p>
+                            </div>
+                            <div class="flex  justify-end flex-1">
+                                <img src="./images/seat-green-filled.png" alt="">
+                                <p>Selected</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>Price</p>
+                        <hr>
+                        <!-- diver straing -->
+                        <div class="flex flex-1 justify-end my-5 mx-3">
+                            <button class="btn w-32">
+                                <img class="w-12 h-12" src="./images/driver string.png" alt="">
+                            </button>
                         </div>
-                    </div>
-                    <hr>
-                    <div>
-                        <div>
-                            <p>C2</p>
-                        </div>
-                        <div>
-                            <p>Economoy</p>
-                        </div>
-                        <div>
-                            <p>550</p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div>
-                        <div>
-                            <p>C2</p>
-                        </div>
-                        <div>
-                            <p>Economoy</p>
-                        </div>
-                        <div>
-                            <p>550</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <p>Total Price</p>
-                        </div>
-                        <div>
-                            <p>BDT</p> <span>0</span>
-                        </div>
-                    </div>
-                    <div>
-                        <input type="text" placeholder="Have any copupon?">
-                        <input type="submit" value="submit">
-                    </div>
-                    <div>
-                        <div>
-                            <p>Grand Total:</p>
-                        </div>
-                        <div>
-                            <p>BDT</p><span>0</span>
+                        <div class="flex">
+                            <div class="flex flex-col gap-3">
+                                <button class="btn">A</button>
+                                <button class="btn">B</button>
+                                <button class="btn">C</button>
+                                <button class="btn">D</button>
+                                <button class="btn">E</button>
+                                <button class="btn">F</button>
+                                <button class="btn">G</button>
+                                <button class="btn">H</button>
+                                <button class="btn">I</button>
+                                <button class="btn">J</button>
+                              </div> 
+                            <div class="flex flex-col w-32 gap-3  mx-3">
+                                <button class="btn sit">A1</button>
+                                <button class="btn sit">B1</button>
+                                <button class="btn sit">C1</button>
+                                <button class="btn sit">D1</button>
+                                <button class="btn sit">E1</button>
+                                <button class="btn sit">F1</button>
+                                <button class="btn sit">G1</button>
+                                <button class="btn sit">H1</button>
+                                <button class="btn sit">I1</button>
+                                <button class="btn sit">J1</button>
+                              </div> 
+                              <div class="flex flex-col w-32 gap-3 mx-3">
+                                <button class="btn  sit">A2</button>
+                                <button class="btn  sit">B2</button>
+                                <button class="btn  sit">C2</button>
+                                <button class="btn  sit">D2</button>
+                                <button class="btn  sit">E2</button>
+                                <button class="btn  sit">F2</button>
+                                <button class="btn  sit">G2</button>
+                                <button class="btn  sit">H2</button>
+                                <button class="btn  sit">I2</button>
+                                <button class="btn  sit">J2</button>
+                              </div> 
+                              <div class="flex flex-col w-32 gap-3 mx-7">
+                                <button class="btn  sit">A3</button>
+                                <button class="btn  sit">B3</button>
+                                <button class="btn  sit">C3</button>
+                                <button class="btn  sit">D3</button>
+                                <button class="btn  sit">E3</button>
+                                <button class="btn  sit">F3</button>
+                                <button class="btn  sit">G3</button>
+                                <button class="btn  sit">H3</button>
+                                <button class="btn  sit">I3</button>
+                                <button class="btn  sit">J3</button>
+                              </div>
+                              <div class="flex flex-col w-32 gap-3 mx-3">
+                                <button class="btn  sit">A4</button>
+                                <button class="btn  sit">B4</button>
+                                <button class="btn  sit">C4</button>
+                                <button class="btn  sit">D4</button>
+                                <button class="btn  sit">E4</button>
+                                <button class="btn  sit">F4</button>
+                                <button class="btn  sit">G4</button>
+                                <button class="btn  sit">H4</button>
+                                <button class="btn  sit">I4</button>
+                                <button class="btn  sit">J4</button>
+                              </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <p>Passenger Name*</p><br>
-                        <input type="text" placeholder="Enter your name">
+                <div class="pl-5">
+                    <img src="./images/Line 1.png" alt="">
+                </div>
+                <div class="px-5 flex-1">
+                    <div class="py-5"><p class="text-lg text-black font-medium">Select Your Seat</p></div>
+                    <!-- sit const input field total grandtotal -->
+                    <hr class="w-11/12 m-auto ">
+                    <div class="bg-[#eeeeee] p-2 rounded-md">
+                        <div class="flex my-5">
+                            <div class="w-1/3 pl-3">
+                                <p>Seat</p>
+                            </div>
+                            <div class="w-1/3">
+                                <p>Class</p>
+                            </div>
+                            <div class="w-1/3">
+                                <p>Price</p>
+                            </div>
+                        </div>
+                        <hr class="w-11/12 m-auto ">
+                        <div class="flex my-5">
+                            <div  class="w-1/3 pl-3">
+                                <p>C2</p>
+                            </div>
+                            <div class="w-1/3">
+                                <p>Economoy</p>
+                            </div>
+                            <div class="w-1/3">
+                                <p>550</p>
+                            </div>
+                        </div>
+                        <hr class="w-11/12 m-auto ">
+                        <div class="flex my-5">
+                            <div  class="w-1/3 pl-3">
+                                <p>C2</p>
+                            </div>
+                            <div class="w-1/3">
+                                <p>Economoy</p>
+                            </div>
+                            <div class="w-1/3">
+                                <p>550</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-1">
+                                <p>Total Price</p>
+                            </div>
+                            <div class="flex-1  text-right pr-5 my-5">
+                                <div>
+                                    <p>BDT : 0</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full relative">
+                            <input type="text" class="w-full h-12 rounded-lg pl-5 " placeholder="Have any copupon?">
+                            <input type="submit"class="w-32 h-10 rounded-lg text-lg text-white font-medium bg-[#1dd100] absolute bottom-1 right-1" value="Apply">
+                        </div>
+                        <div class="flex my-5">
+                            <div class="flex-1 text-left">
+                                <p>Grand Total:</p>
+                            </div>
+                            <div class="flex-1 text-right pr-5">
+                                <p>BDT: 0</p>
+                            </div>
+                        </div>
                     </div>
                     <div>
-                        <p>Phone Number*</p><br>
-                        <input type="text" placeholder="Enter your phone number">
-                    </div>
-                    <div>
-                        <p>Email ID</p><br>
-                        <input type="text" placeholder="Enter your email id">
-                    </div>
-                    <div>
-                        <button>Next</button>
-                    </div>
-                    <div>
-                        <p>Terms and Conditions</p>
-                        <p>Cancellation Policy</p>
+                        <div class="pt-5">
+                            <p class="text-base text-black font-medium">Passenger Name*</p><br>
+                            <input type="text" class="w-full rounded-md h-12 p-5" placeholder="Enter your name" required>
+                        </div>
+                        <div class="pt-5">
+                            <p class="text-base text-black font-medium">Phone Number*</p><br>
+                            <input type="text" class="w-full rounded-md h-12 p-5" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="pt-5">
+                            <p class="text-base text-black font-medium">Email ID</p><br>
+                            <input type="text" class="w-full rounded-md h-12 p-5" placeholder="Enter your email id">
+                        </div>
+                        <div class="pt-5">
+                            <button class="btn w-full text-lg text-white hover:text-black bg-[#1dd100] font-medium">Next</button>
+                        </div>
+                        <div class="flex pt-1">
+                            <div class="flex-1 justify-start ">
+                                <p class="text-sm text-left text-gray-400 underline">Terms and Conditions</p>
+                            </div>
+                            <div class="flex-1 justify-end ">
+                                <p class="text-sm text-right underline text-gray-400">Cancellation Policy</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -343,15 +357,13 @@
         <div>
             <footer class="footer p-10 bg-neutral text-neutral-content">
                 <aside>
-                  <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="fill-current"><path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path></svg>
-                  <p>ACME Industries Ltd.<br>Providing reliable tech since 1992</p>
+                  <p>P-Ticket</p>
+                  <p>P-Ticket is a digital platform to make your <br>daily commuting better.</p>
                 </aside> 
-                <nav>
-                  <h6 class="footer-title">Social</h6> 
+                <nav class="">
+                  <h6 class="footer-title">Download our app</h6> 
                   <div class="grid grid-flow-col gap-4">
-                    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
-                    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
-                    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+                    <a><img src="./images/Group 104.png" alt=""></a>
                   </div>
                 </nav>
               </footer>
@@ -359,19 +371,18 @@
         <div>
             <footer class="footer items-center p-4 bg-neutral text-neutral-content">
                 <aside class="items-center grid-flow-col">
-                  <svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="fill-current"><path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path></svg> 
-                  <p>Copyright © 2024 - All right reserved</p>
+                  <p>@all rights reserved, P-Ticket services limited.2024</p>
                 </aside> 
                 <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-                  <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
-                  </a>
-                  <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
-                  <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+                  <a><p>Terms & condition</p></a>
+                  <a><p>Return & refund policy</p></a>
+                  <a><p>Privacy policy</p></a>
                 </nav>
               </footer>
         </div>
     </footer>
     <!-- javaScript file link here -->
+    <script src="./utility.js"></script>
     <script src="./index.js"></script>
 </body>
 </html>
