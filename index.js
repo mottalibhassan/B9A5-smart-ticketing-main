@@ -43,8 +43,14 @@ for (let sit of allSit){
         const number = findElement('sitPurses');
         const convertNumbers = parseInt(number);
         let totalAmountOfTicket = convertNumbers *550;
-        console.log(totalAmountOfTicket);
+        // console.log(totalAmountOfTicket);
         document.getElementById('totalPrice').innerText = totalAmountOfTicket;
+        const promoCode = document.getElementById('promoCodeFild').value;
+        const promo = promoCode.split(" ").join(""). toUpperCase();
+    if(promo ==='NEW15' || promo ==='COUPLE20'){
+        const off15 = totalAmountOfTicket * 0.15;
+        console.log(off15);
+    }
     })
 }
 
