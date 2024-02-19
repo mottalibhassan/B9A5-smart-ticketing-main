@@ -75,6 +75,7 @@ for (let sit of allSit){
         const convertNumbers = parseInt(number);
         let totalAmountOfTicket = convertNumbers *550;
         setNewSit('totalPrice',totalAmountOfTicket);
+        setNewSit('totalGrandAmount',totalAmountOfTicket);
         // console.log(totalAmountOfTicket);
         // document.getElementById('totalPrice').innerText = totalAmountOfTicket;
         // const promoCode = document.getElementById('promoCodeFild').value;
@@ -83,6 +84,11 @@ for (let sit of allSit){
         //     const off15 = totalAmountOfTicket * 0.15;
         //     console.log(off15);
         // }
+        const numb = parseInt(findElement('sitPurses'));
+        if ( numb >= 1){
+            const btnNext = document.getElementById('pursesConfurmButton');
+            btnNext.removeAttribute('disabled');
+        }
     })
 }
 
@@ -118,6 +124,7 @@ promoCodeButton.addEventListener( "click" , function() {
         // discountShow.innerText= conDisAmo;
         setNewSit('discountAmountShow',conDisAmo);
         setNewSit('totalGrandAmount',grandAmountTotal);
+        hideElement('inputSection');
     }
     else if( inputFild === 'Couple 20'){
         const dis = document.getElementById('totalPrice').innerText;
@@ -128,8 +135,10 @@ promoCodeButton.addEventListener( "click" , function() {
         // ---------------------------
         setNewSit('discountAmountShow',conDisAmo);
         setNewSit('totalGrandAmount',grandAmountTotal);
+        hideElement('inputSection');
     }
     else{
         console.log('you dont have any discount');
     }
 });
+

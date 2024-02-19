@@ -24,7 +24,7 @@
                   <li><a>Search</a></li>
                 </ul>
               </div>
-              <a class="btn btn-ghost text-xl">Ena</a>
+              <a class="btn btn-ghost text-xl raleway800">Ena</a>
             </div>
             <div class="navbar-center  hidden lg:flex ">
               <ul class="menu menu-horizontal  px-1">
@@ -36,7 +36,7 @@
             </div>
             <div class="navbar-end">
               <div class="btn border-[#1DD100] bg-[#dcffd7]">
-                <a class="text-[#1DD100]">Bus</a>
+                <a class="text-[#1DD100] raleway700">Bus</a>
               <img src="./images/bus-icon.png" alt="">
               </div>
             </div>
@@ -48,16 +48,16 @@
             <div class="hero-overlay bg-opacity-30"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-2xl">
-                <h1 class="text-6xl text-white font-bold  text-center">End-to-End Travel with <br><span class="text-6xl text-[#1DD100]">Ena Paribahan</span></h1>
-                <p class="text-lg text-white text-center">Yes, you can run unit tests and view the results directly within the app. The <br>integrated testing features allow for a streamlined .</p>
-                <button class="btn px-10  border-[#1DD100] text-white bg-[#1DD100]  hover:text-black" ><a href="#buyTicket">Buy Tickets</a></button>
+                <h1 class="text-6xl text-white font-bold raleway800  text-center">End-to-End Travel with <br><span class="text-6xl text-[#1DD100]">Ena Paribahan</span></h1>
+                <p class="text-lg inter400 text-white text-center">Yes, you can run unit tests and view the results directly within the app. The <br>integrated testing features allow for a streamlined .</p>
+                <button class="btn px-10  border-[#1DD100] text-white raleway800 bg-[#1DD100]  hover:text-black" ><a href="#buyTicket">Buy Tickets</a></button>
               </div>
             </div>
           </div>
        </section>
         <!-- Best offers for you -->
         <section class=" mt-10 my-5" >
-            <h2 class="text-black text-5xl font-bold text-center">Best offers for you</h2>
+            <h2 class="text-black text-5xl font-bold text-center raleway700">Best offers for you</h2>
             <div class="flex gap-3">
                 <div class="w-2/4 h-56 bg-[#FFBF0F] rounded-3xl mt-5 flex">
                     <div class="w-3/5 text-center pt-10">
@@ -69,13 +69,13 @@
                         <img src="./images/cupon-devider.png" alt="">
                     </div>
                     <div class="text-center pt-10">
-                        <h2 class="text-5xl text-black font-extrabold">NEW15</h2>
+                        <h2 class="text-5xl text-black font-extrabold">NEW<sub>15</sub></h2>
                         <p class="text-2xl text-black font-semibold">Coupon Code</p>
                     </div>
                 </div>
                 <div class="w-2/4 h-56 bg-[#F78C9C] rounded-3xl mt-5 flex">
                     <div class="w-3/5 text-center pt-10">
-                        <h2 class="text-5xl text-black font-extrabold">15% OFF</h2>
+                        <h2 class="text-5xl text-black font-extrabold">20% OFF</h2>
                         <h5 class="text-2xl text-black font-semibold">on your next purchase</h5>
                         <p class="text-xl font-semibold">use by January 2024</p>
                     </div>
@@ -83,7 +83,7 @@
                         <img src="./images/cupon-devider.png" alt="">
                     </div>
                     <div class="text-center pt-10">
-                        <h2 class="text-5xl text-black font-extrabold">NEW15</h2>
+                        <h2 class="text-5xl text-black font-extrabold">Couple 20</h2>
                         <p class="text-2xl text-black font-semibold">Coupon Code</p>
                     </div>
                 </div>
@@ -312,7 +312,7 @@
                             </div>
                         </div> -->
                         <div class="flex">
-                            <div class="flex-1  pl-3">
+                            <div class="flex-1  pl-3 my-5">
                                 <p>Total Price</p>
                             </div>
                             <div class="flex-1  text-right pr-5 my-5">
@@ -321,7 +321,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-full relative">
+                        <div class="w-full relative" id="inputSection">
                             <input type="text" class="w-full h-12 rounded-lg pl-5 "  placeholder="Have any copupon?" id="promoCodeFild">
                             <!-- disabled -->
                             <!-- <input type="submit"class="w-32 h-10 rounded-lg text-lg text-white font-medium bg-[#1dd100] absolute bottom-1 right-1 cursor-pointer " value="Apply"  > -->
@@ -347,18 +347,18 @@
                     <div>
                         <div class="pt-5">
                             <p class="text-base text-black font-medium">Passenger Name*</p><br>
-                            <input type="text" class="w-full rounded-md h-12 p-5" placeholder="Enter your name" required>
+                            <input type="text" class="w-full rounded-md h-12 p-5" required placeholder="Enter your name" id="nametravelers">
                         </div>
                         <div class="pt-5">
                             <p class="text-base text-black font-medium">Phone Number*</p><br>
-                            <input type="number" class="w-full rounded-md h-12 p-5" placeholder="Enter your phone number" required>
+                            <input type="number" class="w-full rounded-md h-12 p-5" required placeholder="Enter your phone number" id="phoneNumber">         
                         </div>
                         <div class="pt-5">
                             <p class="text-base text-black font-medium">Email ID</p><br>
                             <input type="email" class="w-full rounded-md h-12 p-5" placeholder="Enter your email id">
                         </div>
                         <div class="pt-5">
-                            <button onclick="popup()" id="pursesConfurmButton" class="btn w-full text-lg text-white hover:text-black bg-[#1dd100] font-medium" disabled>Next</button>
+                            <button onclick="popup()" id="pursesConfurmButton" class="btn w-full text-lg text-white hover:text-black bg-[#1dd100] font-medium " disabled >Next</button>
                         </div>
                         <div class="flex pt-1">
                             <div class="flex-1 justify-start ">

@@ -7,11 +7,43 @@
   /* font-weight: ; */
   font-style: normal;
 }
+.raleway800 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+.raleway700 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.raleway500 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 
 .inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   /* font-weight: ; */
+  font-style: normal;
+  /* font-variation-settings: "slnt" 0; */
+}
+.inter400 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  /* font-variation-settings: "slnt" 0; */
+}
+.inter700 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
   /* font-variation-settings: "slnt" 0; */
 }
