@@ -6,6 +6,11 @@ function showElement(elementId2){
     const elementShow = document.getElementById(elementId2);
     elementShow.classList.remove('hidden');
 }
+function activeElement(elementId2){
+    const elementShow = document.getElementById(elementId2);
+    // elementShow.classList.remove('hidden');
+    elementShow.removeAttribute('disable');
+}
 function addBackgroundColor(element){
     const background = document.getElementById(element);
     background.classList.add('bg-[#1dd100]');

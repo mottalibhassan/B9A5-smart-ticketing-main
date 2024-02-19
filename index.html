@@ -324,14 +324,23 @@
                         <div class="w-full relative">
                             <input type="text" class="w-full h-12 rounded-lg pl-5 "  placeholder="Have any copupon?" id="promoCodeFild">
                             <!-- disabled -->
-                            <input type="submit"class="w-32 h-10 rounded-lg text-lg text-white font-medium bg-[#1dd100] absolute bottom-1 right-1 cursor-pointer " value="Apply"  >
+                            <!-- <input type="submit"class="w-32 h-10 rounded-lg text-lg text-white font-medium bg-[#1dd100] absolute bottom-1 right-1 cursor-pointer " value="Apply"  > -->
+                            <button id="promoCodeBtn" class="w-32 h-10 rounded-lg text-lg text-white font-medium bg-[#1dd100] absolute bottom-1 right-1 ">Apply</button>
+                        </div>
+                        <div class="flex my-5">
+                            <div class="flex-1 text-left">
+                                <p>Discount Amount:</p>
+                            </div>
+                            <div class="flex-1 text-right pr-5">
+                                <p>BDT: <span id="discountAmountShow">0</span></p>
+                            </div>
                         </div>
                         <div class="flex my-5">
                             <div class="flex-1 text-left">
                                 <p>Grand Total:</p>
                             </div>
                             <div class="flex-1 text-right pr-5">
-                                <p>BDT: 0</p>
+                                <p>BDT:<span id="totalGrandAmount">0</span></p>
                             </div>
                         </div>
                     </div>
@@ -342,14 +351,14 @@
                         </div>
                         <div class="pt-5">
                             <p class="text-base text-black font-medium">Phone Number*</p><br>
-                            <input type="text" class="w-full rounded-md h-12 p-5" placeholder="Enter your phone number" required>
+                            <input type="number" class="w-full rounded-md h-12 p-5" placeholder="Enter your phone number" required>
                         </div>
                         <div class="pt-5">
                             <p class="text-base text-black font-medium">Email ID</p><br>
-                            <input type="text" class="w-full rounded-md h-12 p-5" placeholder="Enter your email id">
+                            <input type="email" class="w-full rounded-md h-12 p-5" placeholder="Enter your email id">
                         </div>
                         <div class="pt-5">
-                            <button onclick="popup()" class="btn w-full text-lg text-white hover:text-black bg-[#1dd100] font-medium">Next</button>
+                            <button onclick="popup()" id="pursesConfurmButton" class="btn w-full text-lg text-white hover:text-black bg-[#1dd100] font-medium" disabled>Next</button>
                         </div>
                         <div class="flex pt-1">
                             <div class="flex-1 justify-start ">
