@@ -2,22 +2,52 @@ let sitNUmber = document.getElementById('sitNumbers').innerText;
 let sitNumbers = 36;
 let totalSit = 0;
 const sitClass = "Economoy";
+let sitCount = 0;
 
 const allSit =document.querySelectorAll('.sit');
 for (let sit of allSit){
     sit.addEventListener('click',function(){
-        sit.classList.add('bg-[#1dd100]');
-        sitNumbers = sitNumbers-1;
+        // sit.classList.add('bg-[#1dd100]');
+        // sitNumbers = sitNumbers-1;
         totalSit ++;
-        setNewSit('sitNumbers',sitNumbers);
-        setNewSit('sitPurses',totalSit);
+        // setNewSit('sitNumbers',sitNumbers);
+        // setNewSit('sitPurses',totalSit);
         const sitName = event.target.innerText;
+        if( totalSit <= 4){
+            sit.classList.add('bg-[#1dd100]');
+            const sitClass = "Economoy";
+            sitCount = sitCount +1 ;
+            // console.log( typeof sitCount);
+            setNewSit('sitPurses',sitCount);
+            sitNumbers = sitNumbers- 1;
+            console.log(sitNumbers);
+            setNewSit('sitNumbers',sitNumbers);
+            // setNewSit('sitPurses',totalSit);
+            const sitdetails = document.getElementById('sitDetails');
+            const tickerprice = document.getElementById('tickerPrice').innerText;
+            const placeDetails = document.getElementById('sitDetailsContainer');
+            const li = document.createElement('li');
+            const p = document.createElement('p');
+            p.innerText=sitName;
+            const p2 = document.createElement('p2');
+            p2.innerText=sitClass;
+            const p3 =document.createElement('p3');
+            p3.innerText=tickerprice;
+            li.appendChild(p);
+            li.appendChild(p2);
+            li.appendChild(p3);
+            placeDetails.appendChild(li);
+        }
+        else{
+            alert('you dont select sit more than 4')
+            totalSit --;
+        }
         // console.log(sitName);
-        const sitdetails = document.getElementById('sitDetails');
-        const tickerprice = document.getElementById('tickerPrice').innerText;
+        // const sitdetails = document.getElementById('sitDetails');
+        // const tickerprice = document.getElementById('tickerPrice').innerText;
         // console.log(tickerprice);
         // console.log(sitClass);
-        const placeDetails = document.getElementById('sitDetailsContainer');
+        // const placeDetails = document.getElementById('sitDetailsContainer');
         // const CreatSpace = document.createElement('placeDetails');
         // const p = document.createElement('p');
         // p.innerText=sitName;
@@ -26,17 +56,17 @@ for (let sit of allSit){
         // const p3 =document.createElement('p3');
         // p3.innerText=tickerprice;
         // CreatSpace.appendChild('p');
-        const li = document.createElement('li');
-        const p = document.createElement('p');
-        p.innerText=sitName;
-        const p2 = document.createElement('p2');
-        p2.innerText=sitClass;
-        const p3 =document.createElement('p3');
-        p3.innerText=tickerprice;
-        li.appendChild(p);
-        li.appendChild(p2);
-        li.appendChild(p3);
-        placeDetails.appendChild(li);
+        // const li = document.createElement('li');
+        // const p = document.createElement('p');
+        // p.innerText=sitName;
+        // const p2 = document.createElement('p2');
+        // p2.innerText=sitClass;
+        // const p3 =document.createElement('p3');
+        // p3.innerText=tickerprice;
+        // li.appendChild(p);
+        // li.appendChild(p2);
+        // li.appendChild(p3);
+        // placeDetails.appendChild(li);
         // placeDetails.appendChild(p2);
         // placeDetails.appendChild(p3);
         // setNewSit('totalPrice', totalAmountOfTicket);
